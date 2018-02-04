@@ -1,0 +1,243 @@
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+
+}
+
+.heading {
+  height: 357px;
+  margin-top: -30px;
+  background-color: #f5f5f5;
+}
+
+.row {
+  margin-top: -327px;
+}
+
+.picture {
+  height: 593px;
+  margin-top: -457px;
+  background:url(../images/model.png) no-repeat;
+}
+
+.circle {
+	width: 380px;
+	height: 380px;
+  background: linear-gradient(to top left, rgba(243, 239, 189, 0.972), rgb(245, 202, 111));
+  margin: 70px 0 0 -12px;
+	border-radius: 190px;
+}
+
+.square {
+  width: 380px;
+	height: 130px;
+  background: #ffffff;
+  margin-top: -123px;
+}
+
+.ending {
+  height: 85px;
+  margin: -85px;
+  background-color: #ffffff;
+  border-top: 1px solid rgba(0, 0, 0, .15);
+}
+
+.mainText {
+  margin-top: 205px;
+}
+
+.chapter {
+  color: #f7c04d;
+  text-transform: uppercase;
+}
+
+.products {
+  margin-top: 60px;
+}
+
+.pageLeft {
+  margin-left: 180px;
+}
+
+.pageRight {
+  margin-left: 30px;
+}
+
+.products>div {
+  margin: -82px 0 0 90px;
+}
+
+.mainCard {
+  margin-top: 345px;
+}
+
+.form-group-size {
+  width: 250px;
+}
+
+.form-group-member {
+  width: 60px;
+  margin: -35px 0 0 255px;
+}
+
+.description {
+  width: 280px;
+  font-size: 8px;
+  padding: 15px 0 15px 0;
+}
+
+.btn-primary {
+  max-width: 360px;
+  width: 100%;
+  background-color: #ffffff;
+  color: black;
+  display: flex;
+	flex-direction: row;
+	flex-wrap: wrap-reverse;
+	justify-content: space-between;
+	align-items: center;
+  align-content: center;
+  border: 0px;
+}
+
+.btn-primary-add {
+  background-color: black;
+  height: 79px;
+  max-width: 360px;
+  width: 100%;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 19px;
+}
+
+.btn-primary-add:hover {
+  color: #f5f5f5;
+  background-color: rgb(20, 71, 129);
+}
+
+.btn-primary-add:focus {
+  color: #f5f5f5;
+  background-color: rgb(20, 71, 129);
+}
+
+@media (max-width: 767px) {
+  .heading {
+    height: 0px;
+    margin-top: 0px;
+  }
+
+  .row {
+    margin-top: 0px;
+  }
+
+  .picture {
+    height: 0px;
+    margin-top: 0px;
+  }
+
+  .circle {
+    width: 0px;
+    height: 0px;
+  }
+
+  .square {
+    width: 0px;
+  }
+
+  .form-group-size {
+    width: 220px;
+  }
+
+  .form-group-member {
+    margin: -35px 0 0 225px;
+  }
+
+  .mainText {
+    margin-top: 60px;
+  }
+
+  .mainCard {
+    margin-top: 60px;
+  }
+
+  .btn-primary {
+    width: 280px;
+  }
+
+  .btn-primary-add {
+    width: 280px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .picture {
+    height: 0px;
+    margin-top: 0px;
+  }
+
+  .circle {
+    width: 0px;
+    height: 0px;
+  }
+
+  .square {
+    width: 0px;
+  }
+
+  .form-group-size {
+    width: 220px;
+  }
+
+  .form-group-member {
+    margin: -35px 0 0 225px;
+  }
+
+  .btn-primary {
+    width: 270px;
+  }
+
+  .btn-primary-add {
+    width: 270px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .picture {
+    height: 593px;
+    width: 120%;
+    margin-left: -30px;
+    background:url(../images/model.png) no-repeat;
+  }
+
+  .circle {
+    margin-left: -40px;
+  }
+
+  .square {
+    margin-left: -40px;
+  }
+
+  .form-group-size {
+    width: 220px;
+  }
+
+  .form-group-member {
+    margin: -35px 0 0 225px;
+  }
+
+  .btn-primary {
+    width: 290px;
+  }
+
+  .btn-primary-add {
+    width: 290px;
+  }
+}
