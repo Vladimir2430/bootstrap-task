@@ -13,4 +13,4 @@
 
 https://cdn.dribbble.com/users/366569/screenshots/3951710/attachments/902371/real-pixels.png
 
-# https://vladimir2430.github.io/bootstrap-task
+# https://uladzimir-yeudakimovich.github.io/bootstrap-task
