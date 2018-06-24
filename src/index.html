@@ -7,19 +7,23 @@
     <meta name="author" content="Uladzimir Yeudakimovich">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Uladzimir Yeudakimovich</title>
-    <link rel="icon" href="images/logo_phone.jpg">
+    <link rel="icon" href="images/logo_laptop.jpg">
     <link href="css/bootstrap.min.css" rel="stylesheet">
   </head>
   <body>
     <div class="languages">
-      <button id="btn1" class="btn">Russian</button>
-      <button id="btn2" class="btn">English</button>
+      <button id="btn1" class="btn btn-primary">Russian</button>
+      <button id="btn2" class="btn btn-primary">English</button>
     </div>
     <div id="phone"></div>
                                         <!-- HEADER -->
     <header>
-      <div id="language-en-header" class="language-en">
-        <article class="information">
+      <div class = "container" id="language-en-header" class="language-en">
+        <div class = "row" >
+          <div class = "col-xs-6">
+            <figure class="logo"></figure>
+          </div>
+        <article class = "col-xs-6" class="information">
           <h3>Front-end developer</h3>
           <h1>Uladzimir Yeudakimovich</h1>
           <p>A few words about me.  I've finished the courses at Rolling Scopes School (EPAM) and Devincubator with a
@@ -29,7 +33,7 @@
             When working with the server side of applications I use node.js, WebSockets.  There is experience with
             the MySQL database and various APIs. To build and optimize projects I use webpack.</p>
         </article>
-        <figure class="logo"></figure>
+      </div>
       </div>
 
       <div id="language-ru-header" class="language-ru">
