@@ -1,14 +1,5 @@
-// div[class^=col]{
-//  background: #8CC7D9;
-//  border: 1px solid #6B6ACD;
-// }
 @color-header: #3a3842;
-@color-white: #ffffff;
-@color-black: #000000;
-@color-orange: #DD3E18;
-@color-orange-lite: rgb(255, 94, 0);
-@color-gray: rgb(195, 211, 211);
-@gradient: linear-gradient(-180deg, #E6F0F0 0%, #E9F0E6 100%);
+@color-footer: linear-gradient(-180deg, #E6F0F0 0%, #E9F0E6 100%);
 .font-face(Helvetica){
   @font-face{
     font-family: Helvetica-Bold;
@@ -25,22 +16,8 @@
     font-style: normal;
   }
 }
-.font-face(Glyphicons){
-  @font-face{
-    font-family: glyphicons-halflings-regular;
-    src:url('../fonts/glyphicons-halflings-regular.eot');
-    src:url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'),
-        url('../fonts/glyphicons-halflings-regular.woff') format('woff'),
-        url('../fonts/glyphicons-halflings-regular.ttf')  format('truetype'),
-        url('../fonts/glyphicons-halflings-regular.svg#svgFontName') format('svg');
-    font-weight: normal;
-    font-style: normal;
-  }
-}
 @fontBold: "Helvetica", serif;
 @fontRegular: "Georgia", serif;
-@fontBootstrap: "Glyphicons", serif;
 
 body {
                                           /*HEADER*/
@@ -63,14 +40,14 @@ body {
     position: fixed;
     top: 94%;
     left: 3%;
-    font-size: 2em;
+    font-size: 1.4em;
     font-family: @fontBold;
-    color: @color-orange;
+    color: #286090;
     z-index: 5;
   }
   header {
     background-color: @color-header;
-    color: @color-white;
+    color: white;
     .information {
       height: 700px;
       font-family: @fontBold;
@@ -215,22 +192,20 @@ body {
       display: flex;
       flex-direction: column;
       flex-wrap: nowrap;
-
       align-items:  flex-start;
       align-content: center;
       h3 {
         height: 29px;
         font-family: @fontBold;
         font-size: 24px;
-        color: @color-black;
+        color: black;
       }
       a {text-decoration: none;}
-      a:hover {color: @color-orange;}
       p {
         height: 147px;
         opacity: 0.8;
         font-family: @fontRegular;
-        color: @color-black;
+        color: black;
         line-height: 24px;
         text-align: justify;
       }
@@ -238,21 +213,26 @@ body {
   }
                                         /*FOOTER*/
   footer {
-    background-image: @gradient;
-    .contacts
-      h1 {font-family: @fontBold;}
+    background-image: @color-footer;
+    .contacts {
+      padding-left: 40px;
+      h1 {
+        padding-left: 20px;
+        font-family: @fontBold;
+      }
       p {
         font-family: @fontRegular;
         text-align: justify;
+        padding: 30px 40px 30px 0;
       }
-      h4 {font-family: @fontRegular;}
+      h4 {
+        padding: 0 0 20px 20px;
+        font-family: @fontRegular;
+      }
       ul {
         height: 170px;
-        width: 144px;
-        padding-left: 40px;
-        color: @color-gray;
+        padding: 0;
         li {
-          width: 140px;
           height: 20px;
           margin-top: 10px;
           list-style-type: none;
@@ -266,52 +246,53 @@ body {
             border-radius: 2px;
           }
           a {
-            color: @color-orange;
             text-decoration: none;
             font-family: @fontRegular;
             font-size: 16px;
             line-height: 32px;
             padding: 10px 12px;
           }
-          a:hover {color: @color-orange-lite;}
-          a:focus {color: @color-header;}
+          a:hover {text-decoration: none;}
         }
       }
     }
     .forms {
+      height: 480px;
+      margin: auto;
       input[type=text], input[type=email] {
-        background: @color-white;
-        border: 1px solid @color-white;
         border-radius: 4px;
+        width: 95%;
+        height: 48px;
+        padding: 0 20px;
+        margin: 12px 0;
       }
       input[name="later"] {
-        background: @color-white;
-        border: 1px solid @color-white;
         border-radius: 4px;
+        width: 95%;
+        height: 192px;
+        padding: 0 20px;
+        margin: 12px 0;
       }
-      input[type=text]:hover, input[type=email]:hover {border: 1px solid @color-black;}
+      input[type=text]:hover, input[type=email]:hover {border: 1px solid black;}
       input[type=file] {
-        width: 120px;
+        display: inline;
+        margin-left: -110px;
 	      opacity: 0;
 	      overflow: hidden;
         z-index: -1;
         cursor: pointer;
       }
       .fa-sticky-note {
-        margin-left: -120px;
-        color: @color-orange;
+        display: block;
+        margin: -25px 0 0 20px;
+        color: #286090;
       }
-      .fa-sticky-note:hover {color: @color-orange-lite;}
       input[type=submit] {
-        background-color: @color-orange;
-        color: @color-white;
+        width: 95%;
+        height: 49px;
+        margin: 12px 0;
         font-family: @fontBold;
-        line-height: 24px;
-        font-size: 16px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
       }
-      input[type=submit]:hover {background-color: @color-orange-lite;}
+    }
   }
 }
