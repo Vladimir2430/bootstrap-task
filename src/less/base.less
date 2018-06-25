@@ -18,6 +18,8 @@
 }
 @fontBold: "Helvetica", serif;
 @fontRegular: "Georgia", serif;
+@font-size-base: 20px;
+@line-height-base: 24px;
 
 body {
                                           /*HEADER*/
@@ -40,7 +42,6 @@ body {
     position: fixed;
     top: 94%;
     left: 3%;
-    font-size: 1.4em;
     font-family: @fontBold;
     color: #286090;
     z-index: 5;
@@ -49,20 +50,18 @@ body {
     background-color: @color-header;
     color: white;
     .information {
-      height: 700px;
+      height: 768px;
       font-family: @fontBold;
-      h3 {
-        font-size: 24px;
-        margin-top: 50px;
-      }
-      h1 {
-        font-size: 40px;
-        margin-top: 50px;
-      }
+      h3 {margin-top: 50px;}
+      h1 {margin-top: 50px;}
       p {
-        font-size: 20px;
+        font-size: @font-size-base;
         margin-top: 50px;
         font-family: @fontRegular;
+        text-align: justify;
+      }
+      h5 {
+        font-size: @font-size-base*0.95;
         text-align: justify;
       }
     }
@@ -76,7 +75,7 @@ body {
       background: url(../images/logo_phone.jpg) no-repeat;
       height: 144px;
       width: 144px;
-      margin: 50px auto 0;
+      margin: 0 auto;
       border-radius: 72px;
     }
   }
@@ -178,13 +177,13 @@ body {
       position: absolute;
       width: 150px;
       left: 65%;
-      margin-top: -35px;
+      margin-top: -30px;
     }
     .controls-right {
       position: absolute;
       width: 150px;
       left: 20%;
-      margin-top: -35px;
+      margin-top: -30px;
     }
     .description {
       height: 384px;
@@ -197,7 +196,6 @@ body {
       h3 {
         height: 29px;
         font-family: @fontBold;
-        font-size: 24px;
         color: black;
       }
       a {text-decoration: none;}
@@ -206,7 +204,7 @@ body {
         opacity: 0.8;
         font-family: @fontRegular;
         color: black;
-        line-height: 24px;
+        line-height: @line-height-base;
         text-align: justify;
       }
     }
@@ -214,6 +212,7 @@ body {
                                         /*FOOTER*/
   footer {
     background-image: @color-footer;
+    margin-top: 20px;
     .contacts {
       padding-left: 40px;
       h1 {
@@ -248,8 +247,8 @@ body {
           a {
             text-decoration: none;
             font-family: @fontRegular;
-            font-size: 16px;
-            line-height: 32px;
+            font-size: @font-size-base*3/4;
+            line-height: @line-height-base;
             padding: 10px 12px;
           }
           a:hover {text-decoration: none;}
@@ -266,14 +265,8 @@ body {
         padding: 0 20px;
         margin: 12px 0;
       }
-      input[name="later"] {
-        border-radius: 4px;
-        width: 95%;
-        height: 192px;
-        padding: 0 20px;
-        margin: 12px 0;
-      }
-      input[type=text]:hover, input[type=email]:hover {border: 1px solid black;}
+      input[name="later"] {height: 192px;}
+      input[type=text]:hover, input[type=email]:hover {border: 1px solid #286090;}
       input[type=file] {
         display: inline;
         margin-left: -110px;
