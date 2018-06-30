@@ -1,7 +1,7 @@
 {
   "name": "portfolio-bootstrap",
   "version": "1.0.0",
-  "description": "Uladzimir Yeudakimovich",
+  "description": "bootstrap-3-task",
   "scripts": {
     "build": "webpack",
     "start": "webpack-dev-server"
