@@ -16,22 +16,22 @@
     font-style: normal;
   }
 }
-.font-face(glyphicons-halflings-regular){
-  @font-face{
-    font-family: glyphicons-halflings-regular;
-    src:url('../fonts/glyphicons-halflings-regular.eot');
-    src:url('../fonts/glyphicons-halflings-regular.eot') format('embedded-opentype'),
-        url('../fonts/glyphicons-halflings-regular.woff') format('woff'),
-        url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'),
-        url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'),
-        url('../fonts/glyphicons-halflings-regular.svg') format('svg');
-    font-weight: normal;
-    font-style: normal;
-  }
-}
+// .font-face(glyphicons-halflings-regular){
+//   @font-face{
+//     font-family: glyphicons-halflings-regular;
+//     src:url('../fonts/glyphicons-halflings-regular.eot');
+//     src:url('../fonts/glyphicons-halflings-regular.eot') format('embedded-opentype'),
+//         url('../fonts/glyphicons-halflings-regular.woff') format('woff'),
+//         url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'),
+//         url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'),
+//         url('../fonts/glyphicons-halflings-regular.svg') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+//   }
+// }
 @fontBold: "Helvetica", serif;
 @fontRegular: "Georgia", serif;
-@fontBootstrap: "glyphicons-halflings-regular";
+// @fontBootstrap: "glyphicons-halflings-regular";
 @font-size-base: 20px;
 @line-height-base: 24px;
 
@@ -54,7 +54,7 @@ body {
   }
   .phone {
     position: fixed;
-    top: 96%;
+    top: 95%;
     left: 3%;
     font-family: @fontBold;
     color: #286090;
@@ -73,24 +73,6 @@ body {
         font-family: @fontRegular;
         text-align: justify;
       }
-      h5 {
-        font-size: @font-size-base*0.95;
-        text-align: justify;
-        margin-top: 40px;
-      }
-    }
-    .logo {
-      background: url(../images/logo_laptop.jpg) no-repeat;
-      height: 768px;
-      width: 470px;
-      margin-left: -105px;
-    }
-    .logoSmall {
-      background: url(../images/logo_phone.jpg) no-repeat;
-      height: 144px;
-      width: 144px;
-      margin: 40px auto 0;
-      border-radius: 72px;
     }
   }
   main {
@@ -101,18 +83,14 @@ body {
       align-items: center;
       font-family: @fontBold;
     }
-
     .my-works-right {
-      // display: flex;
-      // flex-direction: row-reverse;
-      // justify-content: center;
+      display: flex;
+      flex-direction: row-reverse;
       margin-top: 20px;
     }
-
     .my-works {
       margin-top: 20px;
     }
-
     .description {
       font-family: @fontBold;
       display: flex;
