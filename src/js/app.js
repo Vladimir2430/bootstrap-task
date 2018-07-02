@@ -23,5 +23,5 @@ document.getElementById('btn2').addEventListener("click", function() {
   phone.build();
 });
 
-let phone = new Phone(`<div class="phone"><h3>+375 33 3344201</h3></div>`);
+let phone = new Phone(`<div class="phone"><h4>+375 33 3344201</h4></div>`);
 window.onload = setTimeout(() => phone.build(), 6000);
